@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "113205024719",
+    "firebase_url": "https://swift-28f4c.firebaseio.com",
+    "project_id": "swift-28f4c",
+    "storage_bucket": "swift-28f4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113205024719:android:a54eeca34a0b0238",
+        "android_client_info": {
+          "package_name": "com.hovahs.swift"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113205024719-mmg0gjd1od983oq0l4anlvj0uqa391h6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hovahs.swift",
+            "certificate_hash": "773132a339a2db2400291e9b451bae94c4fff571"
+          }
+        },
+        {
+          "client_id": "113205024719-gfg58b2taur14hql62cb0tf9g739158q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUrJC0OUxsDPjJ7CCoet65qnbUpzrOT34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113205024719-gfg58b2taur14hql62cb0tf9g739158q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hovahs.swift.Customer.CustomerSettingsActivity"
+    android:gravity="center">
+
+    <LinearLayout
+        android:padding="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:id="@+id/profileImage"
+            android:src="@mipmap/ic_default_user"
+            android:layout_marginBottom="20sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@android:color/darker_gray"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColorHint="#cccccc">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="@string/name"
+                android:id="@+id/name"
+                android:inputType="textPersonName"
+                android:textSize="20sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColorHint="#cccccc">
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="@string/phone"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColorHint="#cccccc">
+            <EditText
+                android:id="@+id/car"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="@string/car"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@android:color/darker_gray"/>
+
+        <co.ceryle.radiorealbutton.RadioRealButtonGroup
+            android:id="@+id/radioRealButtonGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:rrbg_backgroundColor="@android:color/transparent"
+            app:rrbg_animateDrawables_enter="overshoot"
+            app:rrbg_animateDrawables_enterDuration="500"
+            app:rrbg_animateDrawables_exit="overshoot"
+            app:rrbg_animateDrawables_exitDuration="500"
+            app:rrbg_animateDrawables_scale="1.2"
+            app:rrbg_animateTexts_enter="overshoot"
+            app:rrbg_animateTexts_enterDuration="500"
+            app:rrbg_bottomLineColor="@color/colorAccent"
+            app:rrbg_buttonsPaddingTop="14dp"
+            app:rrbg_selectorAboveOfBottomLine="false"
+            app:rrbg_selectorColor="@color/colorAccent"
+            app:rrbg_selectorSize="6dp"
+            app:rrbg_selectorTop="false"
+            app:rrbg_selectorDividerPadding="20sp"
+            app:rrbg_buttonsPaddingBottom="20sp">
+                
+            <co.ceryle.radiorealbutton.RadioRealButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:rrb_drawable="@drawable/ic_uber_x"
+                app:rrb_drawableGravity="top"
+                app:rrb_drawableHeight="40dp"
+                app:rrb_drawableWidth="40dp"
+                app:rrb_rippleColor="@color/colorAccent"
+                app:rrb_text="@string/UberX"
+                app:rrb_textColor="@android:color/darker_gray"
+                app:rrb_textSize="12sp"/>
+            <co.ceryle.radiorealbutton.RadioRealButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:rrb_drawable="@drawable/ic_uber_xl"
+                app:rrb_drawableGravity="top"
+                app:rrb_drawableHeight="40dp"
+                app:rrb_drawableWidth="40dp"
+                app:rrb_rippleColor="@color/colorAccent"
+                app:rrb_text="@string/UberXl"
+                app:rrb_textColor="@android:color/darker_gray"
+                app:rrb_textSize="12sp"/>
+            <co.ceryle.radiorealbutton.RadioRealButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:rrb_drawable="@drawable/ic_uber_black"
+                app:rrb_drawableGravity="top"
+                app:rrb_drawableHeight="40dp"
+                app:rrb_drawableWidth="40dp"
+                app:rrb_rippleColor="@color/colorAccent"
+                app:rrb_text="@string/UberBlack"
+                app:rrb_textColor="@android:color/darker_gray"
+                app:rrb_textSize="12sp"/>
+        </co.ceryle.radiorealbutton.RadioRealButtonGroup>
+        <View
+
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@android:color/darker_gray"/>
+
+        <Button
+            android:padding="20sp"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirm"
+            android:text="@string/confirm"/>
+        <Button
+            android:padding="20sp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/back"
+            android:text="@string/back"/>
+
+    </LinearLayout>
+</ScrollView>

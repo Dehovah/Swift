@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:id="@+id/layout">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColorHint="#cccccc">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffff"
+            android:drawableLeft="@drawable/ic_email"
+            android:hint="@string/email"
+            android:id="@+id/email"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#cccccc">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffff"
+            android:drawableLeft="@drawable/ic_password"
+            android:hint="@string/password"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <co.ceryle.radiorealbutton.RadioRealButtonGroup
+        android:id="@+id/radioRealButtonGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rrbg_backgroundColor="@android:color/transparent"
+        app:rrbg_animateDrawables_enter="overshoot"
+        app:rrbg_animateDrawables_enterDuration="500"
+        app:rrbg_animateDrawables_exit="overshoot"
+        app:rrbg_animateDrawables_exitDuration="500"
+        app:rrbg_animateDrawables_scale="1.2"
+        app:rrbg_animateTexts_enter="overshoot"
+        app:rrbg_animateTexts_enterDuration="500"
+        app:rrbg_bottomLineColor="@color/colorAccent"
+        app:rrbg_buttonsPaddingTop="14dp"
+        app:rrbg_selectorAboveOfBottomLine="false"
+        app:rrbg_selectorColor="@color/colorAccent"
+        app:rrbg_selectorSize="6dp"
+        app:rrbg_selectorTop="false"
+        app:rrbg_selectorDividerPadding="20sp"
+        app:rrbg_buttonsPaddingBottom="20sp">
+        <co.ceryle.radiorealbutton.RadioRealButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rrb_drawable="@drawable/ic_customer"
+            app:rrb_drawableTint="@android:color/white"
+            app:rrb_drawableGravity="top"
+            app:rrb_drawableHeight="40dp"
+            app:rrb_drawableWidth="40dp"
+            app:rrb_rippleColor="@color/colorAccent"
+            app:rrb_text="@string/customer"
+            app:rrb_textColor="@android:color/white"
+            app:rrb_textSize="12sp"/>
+        <co.ceryle.radiorealbutton.RadioRealButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rrb_drawable="@drawable/ic_uber_xl"
+            app:rrb_drawableTint="@android:color/white"
+            app:rrb_drawableGravity="top"
+            app:rrb_drawableHeight="40dp"
+            app:rrb_drawableWidth="40dp"
+            app:rrb_rippleColor="@color/colorAccent"
+            app:rrb_text="@string/driver"
+            app:rrb_textColor="@android:color/white"
+            app:rrb_textSize="12sp"/>
+    </co.ceryle.radiorealbutton.RadioRealButtonGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorAccent"
+        android:text="@string/register"
+        android:id="@+id/register"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
